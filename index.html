@@ -218,7 +218,8 @@ HTML5 · CSS3 · JavaScript · Full Stack · IA</code></pre>
 
         <!-- Formulário de contato com validação em JavaScript -->
         <!-- novalidate desativa a validação nativa para usarmos a nossa em JS -->
-        <form class="form" id="formContato" novalidate>
+        <!-- IMPORTANTE: troque SEU_ID_AQUI pelo ID do seu formulário no Formspree -->
+        <form class="form" id="formContato" action="https://formspree.io/f/mnjkvepe" method="POST" novalidate>
           <div class="form__campo">
             <label for="nome">Nome</label>
             <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
@@ -237,7 +238,9 @@ HTML5 · CSS3 · JavaScript · Full Stack · IA</code></pre>
             <small class="form__erro" id="erroMensagem"></small>
           </div>
 
-          <button type="submit" class="btn btn--primario btn--bloco">Enviar mensagem</button>
+          <button type="submit" class="btn btn--primario btn--bloco" id="botaoEnviar">Enviar mensagem</button>
+          <!-- Mensagem de status (erros de envio) exibida via JavaScript -->
+          <p class="form__status" id="formStatus" role="alert"></p>
         </form>
 
         <!-- Canais diretos de contato -->
