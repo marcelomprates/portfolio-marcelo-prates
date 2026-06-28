@@ -17,7 +17,7 @@ Site de página única (single page) com navegação por âncoras, dividido em q
 - **Menu fixo** com navegação por âncoras e rolagem suave.
 - **Tema claro/escuro** com persistência da preferência do usuário.
 - **Menu responsivo** (hambúrguer) para dispositivos móveis.
-- **Formulário de contato** com validação em JavaScript (campos obrigatórios e formato de e-mail) e simulação de envio com mensagem de confirmação.
+- **Formulário de contato** com validação em JavaScript (campos obrigatórios e formato de e-mail) e **envio real das mensagens via Formspree**, com mensagem de confirmação.
 - **Layout responsivo** (mobile first), adaptado a celular, tablet e desktop.
 
 ## 🛠️ Tecnologias
